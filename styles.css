@@ -1,0 +1,274 @@
+:root {
+  --bg: #000000;
+  --surface: #0c0c0d;
+  --border: #1e1e20;
+  --text: #f2f1ee;
+  --muted: #9b9a95;
+  --gold: #EBC263;
+  --gold-dim: #b8944a;
+  --font: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif;
+  --measure: 42rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font);
+  font-size: 17px;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+a {
+  color: var(--gold);
+  text-decoration: none;
+}
+
+a:hover,
+a:focus-visible {
+  text-decoration: underline;
+}
+
+:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+.wrap {
+  width: 100%;
+  max-width: var(--measure);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* ---------- Site header ---------- */
+
+.masthead {
+  padding: 2.25rem 0 0;
+}
+
+.wordmark {
+  display: inline-block;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--text);
+}
+
+.wordmark:hover,
+.wordmark:focus-visible {
+  text-decoration: none;
+  color: var(--gold);
+}
+
+/* ---------- Hero ---------- */
+
+.hero {
+  padding: 4.5rem 0 3.5rem;
+}
+
+.mark {
+  width: 68px;
+  height: 68px;
+  margin-bottom: 2rem;
+  border-radius: 18px;
+  border: 1px solid var(--border);
+  background: radial-gradient(120% 120% at 30% 20%, #1a1710 0%, #0a0a0a 70%);
+  display: grid;
+  place-items: center;
+}
+
+.mark span {
+  display: block;
+  width: 26px;
+  height: 30px;
+  background: var(--gold);
+  clip-path: polygon(50% 0%, 100% 18%, 100% 60%, 50% 100%, 0% 60%, 0% 18%);
+  opacity: 0.9;
+}
+
+.hero h1 {
+  margin: 0 0 1rem;
+  font-size: clamp(2.2rem, 8vw, 3.4rem);
+  line-height: 1.08;
+  letter-spacing: -0.03em;
+  font-weight: 700;
+}
+
+.hero .pitch {
+  margin: 0 0 2.25rem;
+  max-width: 30rem;
+  font-size: clamp(1.05rem, 3.4vw, 1.25rem);
+  color: var(--muted);
+}
+
+.cta {
+  display: inline-block;
+  padding: 0.85rem 1.75rem;
+  border-radius: 999px;
+  background: var(--gold);
+  color: #14110a;
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 0.01em;
+  transition: transform 0.18s ease, background-color 0.18s ease;
+}
+
+.cta:hover,
+.cta:focus-visible {
+  background: #f3d287;
+  text-decoration: none;
+  transform: translateY(-1px);
+}
+
+.cta-note {
+  margin: 1rem 0 0;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+/* ---------- Features ---------- */
+
+.features {
+  display: grid;
+  gap: 1px;
+  background: var(--border);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  margin: 0 0 3.5rem;
+}
+
+.feature {
+  background: var(--bg);
+  padding: 2rem 0;
+}
+
+.feature h2 {
+  margin: 0 0 0.5rem;
+  font-size: 1.05rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.feature h2::before {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin-right: 0.7rem;
+  vertical-align: middle;
+  border-radius: 50%;
+  background: var(--gold);
+}
+
+.feature p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.98rem;
+}
+
+/* ---------- Legal pages ---------- */
+
+.legal {
+  padding: 3rem 0 1rem;
+}
+
+.legal h1 {
+  font-size: clamp(1.8rem, 6vw, 2.4rem);
+  letter-spacing: -0.02em;
+  margin: 0 0 0.35rem;
+}
+
+.legal .meta {
+  margin: 0 0 2.5rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.legal h2 {
+  margin: 2.5rem 0 0.6rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--gold);
+  letter-spacing: -0.01em;
+}
+
+.legal p,
+.legal li {
+  color: #cfcdc7;
+}
+
+.legal ul {
+  padding-left: 1.15rem;
+  margin: 0.6rem 0;
+}
+
+.legal li {
+  margin-bottom: 0.4rem;
+}
+
+/* ---------- Footer ---------- */
+
+.site-footer {
+  border-top: 1px solid var(--border);
+  margin-top: 4rem;
+  padding: 2rem 0 3.5rem;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.site-footer nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.site-footer .copyright {
+  margin: 0;
+}
+
+@media (min-width: 40rem) {
+  body {
+    font-size: 18px;
+  }
+
+  .hero {
+    padding: 6rem 0 4.5rem;
+  }
+
+  .feature {
+    padding: 2.25rem 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .cta:hover,
+  .cta:focus-visible {
+    transform: none;
+  }
+}
