@@ -1,6 +1,6 @@
 # holymode-web
 
-The marketing site for **HolyMode**, an iPhone app that helps Christian men quit porn — it blocks tempting apps and sites with Apple Screen Time, gives a daily Bible verse, tracks a streak of days you stood firm, unlocks 30 collectible shields, and offers an optional community. Recovery data stays on the device.
+The marketing site for **HolyMode**, an iPhone app that helps Christian men quit porn — it blocks tempting apps and sites with Apple Screen Time, gives a daily Bible verse, tracks a streak of days you stood firm and unlocks 30 collectible shields. Recovery data stays on the device.
 
 Live at **https://cristianrus4.github.io/holymode-web/**.
 
@@ -16,9 +16,9 @@ Live at **https://cristianrus4.github.io/holymode-web/**.
 
 Plain static HTML and CSS. No build step, no framework, no external requests — open `index.html` in a browser, or run `python3 -m http.server` in this directory to preview.
 
-## Before launch
+## App Store link
 
-The App Store button in `index.html` is a placeholder (`href="#"`). Search for the `TODO` comment above it and swap in the real App Store URL, then remove the "Coming soon." note under the button.
+The App Store links point at https://apps.apple.com/app/id6805688713. `getholy.app/download` (`download/index.html`) redirects there; use it in social bios and QR codes.
 
 ## Deploying to GitHub Pages
 

@@ -83,23 +83,12 @@ a:focus-visible {
 }
 
 .mark {
-  width: 68px;
-  height: 68px;
-  margin-bottom: 2rem;
-  border-radius: 18px;
-  border: 1px solid var(--border);
-  background: radial-gradient(120% 120% at 30% 20%, #1a1710 0%, #0a0a0a 70%);
-  display: grid;
-  place-items: center;
-}
-
-.mark span {
   display: block;
-  width: 26px;
-  height: 30px;
-  background: var(--gold);
-  clip-path: polygon(50% 0%, 100% 18%, 100% 60%, 50% 100%, 0% 60%, 0% 18%);
-  opacity: 0.9;
+  width: 84px;
+  height: 84px;
+  margin-bottom: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
 }
 
 .hero h1 {
@@ -271,4 +260,8 @@ a:focus-visible {
   .cta:focus-visible {
     transform: none;
   }
+}
+
+.closing {
+  text-align: center;
 }
